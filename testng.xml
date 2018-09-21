@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="username" value="17521620315"/>
+	<parameter name="password" value="liufang1994"/>
+  <test thread-count="1" name="Test">
+    <classes>
+      <class name="com.imooc.selenium.testCase.login"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
