@@ -64,7 +64,7 @@ public class login extends CaseBase{
 	 * @throws IOException 
 	 * @throws InterruptedException 
 	 * */
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void testBuyNow() throws IOException, InterruptedException {
 		driver.get("https://coding.imooc.com/class/136.html");
 		coursePagePro.buyCourseNow();
@@ -75,7 +75,7 @@ public class login extends CaseBase{
 	 * @throws IOException 
 	 * @throws InterruptedException 
 	 * */
-	@Test(dependsOnMethods= {"testBuyNow"})
+//	@Test(dependsOnMethods= {"testBuyNow"})
 	public void testSubmitOrder() throws IOException, InterruptedException {
 		submitOrderPagePro.submitOrder();
 		Thread.sleep(3000);
@@ -84,7 +84,7 @@ public class login extends CaseBase{
 	/**
 	 * 支付页面点击选择微信支付，并跳转到微信付款页面
 	 * */
-	@Test(dependsOnMethods= {"testSubmitOrder"})
+//	@Test(dependsOnMethods= {"testSubmitOrder"})
 	public void testPayOrder() throws IOException{
 		orderPayPagePro.payOrder();
 	}
